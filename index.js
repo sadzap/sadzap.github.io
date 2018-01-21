@@ -7,5 +7,8 @@ var name = "Zakiah";
 //     }
 // }
 firebase.database().ref(query).update({ // query's position(root) in the database, key [name] gets value 510
-    [name] : 510
+    [name] : {
+        age : 10,
+        lvl : 5
+    }
 })
