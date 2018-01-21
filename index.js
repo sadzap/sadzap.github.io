@@ -11,7 +11,7 @@ firebase.database().ref(query).update({ // query's position(root) in the databas
 
 name = "Kenyu Diggitt";
 
-firebase.database().ref(query).update({
+database.ref(query).update({
     [name] : {
         age : 69,
         lvl : 4
