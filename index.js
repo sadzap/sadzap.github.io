@@ -21,7 +21,7 @@ database.ref(query).update({
 name = "Your character";
 query = "Kenyu Diggitt";
 
-database.ref(query).once('value').then(function(snapshot) {
+database.ref("/characters/" + query).once('value').then(function(snapshot) {
     if (snapshot.val()) {
         console.log(snapshot.val());
     }
