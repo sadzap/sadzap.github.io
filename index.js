@@ -9,6 +9,15 @@ firebase.database().ref(query).update({ // query's position(root) in the databas
     }
 })
 
+name = "Kenyu Diggitt";
+
+database.ref(query).update({
+    [name] : {
+        age : 69;
+        lvl : 4;
+    }
+})
+
 query = "Zakiah";
 
 firebase.database().ref(query).once('value').then(function(snapshot) {
@@ -16,7 +25,7 @@ firebase.database().ref(query).once('value').then(function(snapshot) {
         console.log(snapshot.val());
     }
     else {
-        console.log("Zakiah is ded.");
+        console.log([name] + " is ded.");
     }
 }).catch(error => {
     console.log(error.message);
