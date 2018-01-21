@@ -18,6 +18,7 @@ firebase.database().ref(query).update({
     }
 })
 
+name = "Zakiah";
 query = "Zakiah";
 
 firebase.database().ref(query).once('value').then(function(snapshot) {
