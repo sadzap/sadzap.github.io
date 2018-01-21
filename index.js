@@ -18,8 +18,8 @@ firebase.database().ref(query).update({
     }
 })
 
-name = "Zakiah";
-query = "Zakiah";
+name = "Your character";
+query = "Kenyu Diggitt";
 
 firebase.database().ref(query).once('value').then(function(snapshot) {
     if (snapshot.val()) {
