@@ -13,8 +13,8 @@ name = "Kenyu Diggitt";
 
 firebase.database().ref(query).update({
     [name] : {
-        age : 69;
-        lvl : 4;
+        age : 69,
+        lvl : 4
     }
 })
 
