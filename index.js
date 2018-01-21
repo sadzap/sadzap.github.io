@@ -1,5 +1,5 @@
 var database = firebase.database();
-var query = "/";
+var query = "/characters/"; // root
 var name = "Zakiah";
 
 firebase.database().ref(query).update({ // query's position(root) in the database, key [name] gets value 510
